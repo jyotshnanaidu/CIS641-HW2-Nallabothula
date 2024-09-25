@@ -13,7 +13,7 @@
 
 <h1>Technical Background</h1>
 
-<p>I graduated with a CGPA of 8.2 in Computer Science and Engineering from MVJ College of Engineering.  I am skilled in programming languages such as C, Python, and Java. I'm eager to showcase my abilities in frameworks like Flask and React. I actively engage in tech communities, discussions, and hackathons, which helps me stay connected with like-minded individuals and continuously sharpen and update my skills.</p>
+<p>I graduated with a CGPA of 8.2 in Information Technology from MVJ College of Engineering.  I am skilled in programming languages such as C, Python, and Java. I'm eager to showcase my abilities in frameworks like Flask and React. I actively engage in tech communities, discussions, and hackathons, which helps me stay connected with like-minded individuals and continuously sharpen and update my skills.</p>
 
 <h1>Programming Languages</h1>
 <ul>
