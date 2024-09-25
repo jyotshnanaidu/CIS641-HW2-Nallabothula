@@ -13,7 +13,7 @@
 
 <h1>Technical Background</h1>
 
-<p>I graduated with a CGPA of 8.45 in Computer Science and Engineering from KL University. As a technology enthusiast, I am skilled in programming languages such as C, Python, and Java. I'm eager to showcase my abilities in frameworks like Flask, Django, and React. I actively engage in tech communities, discussions, and hackathons, which helps me stay connected with like-minded individuals and continuously sharpen and update my skills.</p>
+<p>I graduated with a CGPA of 8.2 in Computer Science and Engineering from MVJ College of Engineering.  I am skilled in programming languages such as C, Python, and Java. I'm eager to showcase my abilities in frameworks like Flask and React. I actively engage in tech communities, discussions, and hackathons, which helps me stay connected with like-minded individuals and continuously sharpen and update my skills.</p>
 
 <h1>Programming Languages</h1>
 <ul>
@@ -28,6 +28,6 @@
 </u1>
 
 <h1>Favourite Meme</h1>
- My Favourite Meme is :-
+ My Favourite Meme is :-https://catlintucker.com/wp-content/uploads/2015/02/Catlin-Tucker-Meme-300x198.png
 
  </html>
