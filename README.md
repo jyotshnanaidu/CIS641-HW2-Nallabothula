@@ -24,7 +24,9 @@
 
 <h1>Projects</h1>
 <u1>
-  <li>Emotion Detection through Speech:</li>
+  <li>Password Generator: Developed a Random Password generator based on the user defined length and complexity .The technologies used in this project are react js ,html ,css.
+  This project has significantly enhanced my skills, as I've had to tackle numerous challenges throughout the development process and successfully overcome them.
+ </li>
 </u1>
 
 <h1>Favourite Meme</h1>
