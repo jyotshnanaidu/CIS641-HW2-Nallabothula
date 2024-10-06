@@ -1,24 +1,55 @@
-body {
-    background-color: #f0f0f0; /* Change this to your desired color */
-    font-family: Arial, sans-serif; /* Optional: to set a consistent font */
+/* styles.css */
+
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    background-color: #f4f4f4; /* Light gray background */
+    font-family: Arial, sans-serif; /* Consistent font */
+    color: #333; /* Dark gray text color */
+    line-height: 1.6; /* Improve readability */
+}
+
+header {
+    background-color: #007BFF; /* Dark blue header */
+    color: white; /* White text */
+    padding: 20px; /* Padding for the header */
+    text-align: center; /* Center the header text */
+}
 
 h1, h2 {
-    color: #333;
-    text-align: center;
+    color: #333; /* Dark text color for headings */
 }
 
-p {
-    text-align: left;
-    color: #555;
+section {
+    background-color: white; /* White background for content sections */
+    margin: 20px auto; /* Center sections */
+    padding: 20px; /* Padding inside sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
 }
 
-a {
-    color: #007bff;
-    text-decoration: none;
+footer {
+    text-align: center; /* Center footer text */
+    padding: 10px 0; /* Padding for footer */
+    background-color: #007BFF; /* Same color as header */
+    color: white; /* White text */
+    position: relative; /* Position for footer */
+    bottom: 0; /* Stick to bottom */
+    width: 100%; /* Full width */
 }
 
-a:hover {
-    text-decoration: underline;
+/* Add responsive styles */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* Reduce padding on small screens */
+    }
+
+    section {
+        margin: 10px; /* Reduce margin on small screens */
+    }
 }
