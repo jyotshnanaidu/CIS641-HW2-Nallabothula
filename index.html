@@ -1,61 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your external CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://rsms.me/">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #0a192f;
+      color: #ccd6f6;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .container {
+      display: flex;
+      max-width: 1200px;
+      width: 100%;
+      padding: 20px;
+      gap: 50px;
+    }
+
+    .left-section {
+      flex: 1;
+      position: sticky;
+      top: 0;
+      align-self: flex-start;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .left-section h1 {
+      font-size: 2.5rem;
+      color: #64ffda;
+      margin: 0;
+    }
+
+    .left-section h2 {
+      font-size: 1.5rem;
+      color: #8892b0;
+      margin-top: 10px;
+    }
+
+    .left-section p {
+      margin: 20px 0;
+      font-size: 1rem;
+      color: #8892b0;
+    }
+
+    .left-section nav ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .left-section nav ul li {
+      margin-bottom: 10px;
+    }
+
+    .left-section nav ul li a {
+      color: #ccd6f6;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+
+    .left-section nav ul li a:hover {
+      color: #64ffda;
+    }
+
+    .right-section {
+      flex: 2;
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #8892b0;
+      overflow-y: auto;
+    }
+
+    .right-section section {
+      margin-bottom: 40px;
+    }
+
+    .right-section .experience-item {
+      background-color: #112240;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .right-section .experience-item h3 {
+      color: #d4d5d8;
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+
+    .right-section .experience-item h4 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+      color: #ccd6f6;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .right-section .experience-item p {
+      margin-bottom: 15px;
+    }
+
+
+    .right-section .education-item {
+      background-color: #112240;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .right-section .education-item h3 {
+      color: #d4d5d8;
+      font-size: 1rem;
+      margin-bottom: 5px;
+    }
+
+    .right-section .education-item h4 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+      color: #ccd6f6;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .right-section .education-item p {
+      margin-bottom: 15px;
+    }
+
+    .right-section .skills {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .right-section .skills span {
+      background-color: #233554;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #64ffda;
+      font-size: 0.9rem;
+    }
+
+    .right-section .interest {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .right-section .interest span {
+      background-color: #233554;
+      padding: 5px 10px;
+      border-radius: 5px;
+      color: #ba8442;
+      font-size: 0.9rem;
+    }
+
+
+    .external-link {
+      color: #64ffda;
+      text-decoration: none;
+      font-size: 1.5rem;
+    }
+
+    .external-link:hover {
+      color: #ccd6f6;
+    }
+
+    /* Media Queries for Mobile Devices */
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .left-section,
+      .right-section {
+        flex: none;
+        width: 100%;
+        height: auto;
+      }
+
+      .left-section {
+        position: static;
+        /* Remove sticky behavior on mobile */
+        margin-bottom: 20px;
+        /* Space between sections */
+      }
+    }
+  </style>
+
 </head>
+
 <body>
+  <div class="container">
+    <div class="left-section">
+      <h1>Jyotshna Nallabothula</h1>
+      <h2>Aspring Student</h2>
+      <nav>
+        <ul>
+          <li><a href="#about">ABOUT</a></li>
+          <li><a href="#experience">SKILLS</a></li>
+          <li><a href="#education">EDUCATION</a></li>
+          <li><a href="#projects">PROJECTS</a></li>
+          <li><a href="#interests">INTERESTS</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="right-section">
+      <section id="about">
+        <h2 style="color: rgb(217, 209, 209);">About</h2>
+        <p>
+          Aspiring Master’s degree candidate with a strong foundation in<strong style="color: rgb(217, 209, 209);">
+            technical management, operations, and emerging technologies</strong>
+        </p>
+        <p>
+          Proficient in <strong style="color: rgb(217, 209, 209);">Python, database management, and computer
+            networking</strong>, with a passion for leveraging technology to transform the job-seeking process and drive
+          impactful solutions.
+        </p>
+        <p>
+          Constantly exploring new trends in <strong style="color: rgb(217, 209, 209);">artificial intelligence and
+            cloud computing</strong> to enhance operational performance.
+          Motivated by the potential of technology to create meaningful change in both business and everyday life
+        </p>
+      </section>
 
-<header>
-    <h1>Jyotshna Nallabothula - Portfolio</h1>
-</header>
+      <section id="experience">
+        <h2 style="color: rgb(217, 209, 209);">Skills</h2>
+        <div class="experience-item">
+          <h4>
+            Programming Languages
+          </h4>
+          <h3>
+            Python
+            <img src="https://skillicons.dev/icons?i=python" alt="Python Icon"
+              style="vertical-align: middle; width: 20px; height: 20px; margin-left: 2px; margin-right: 2px;">
+            C++
+            <img src="https://skillicons.dev/icons?i=cpp" alt="C++ Icon"
+              style="vertical-align: middle; width: 20px; height: 20px; margin-left: 2px; margin-right: 2px;">
+            Java
+            <img src="https://skillicons.dev/icons?i=java" alt="Java Icon"
+              style="vertical-align: middle; width: 20px; height: 20px; margin-left: 2px; margin-right: 2px;">
+          </h3>
+          <h4>
+            CRM
+          </h4>
+          <h3>Salesforce</h3>
+          <h3>SQL</h3>
+          <h4>
+            Soft Skills
+          </h4>
+          <div class="skills">
+            <span>Leadership</span><br>
+            <span>Time Management</span><br>
+            <span>Adaptability</span><br>
+            <span>Teamwork</span><br>
+            <span>Communication</span>
+          </div>
+        </div>
+      </section>
 
-<section>
-    <h2>About Me</h2>
-    <p>I am an aspiring student pursuing a Master’s degree with a solid understanding of technical management and operations. I have strong skills in Python, database management, and computer networking, and I am passionate about technology and its impact on the job-seeking process.</p>
-</section>
+      <section id="education">
+        <h2 style="color: rgb(217, 209, 209);">Education</h2>
+        <div class="education-item">
+          <h4>
+            Master’s in Applied Computer Science
+          </h4>
+          <h3>
+            Grand Valley State University, <strong style="color: rgb(255, 255, 255);">2023 - 2025</strong>
+          </h3>
+          <h4>
+            Bachelor’s in Information Science and Engineering
+          </h4>
+          <h3>MVJ College of Engineering, Bangalore, India, <strong style="color: rgb(255, 255, 255);">2019 -
+              2023</strong></h3>
+        </div>
+      </section>
+      <section id="projects">
+        <h2 style="color: rgb(217, 209, 209);">Projects [Bachelor's]</h2>
 
-<section>
-    <h2>Skills</h2>
-    <ul>
-        <li>Python</li>
-        <li>SQL</li>
-        <li>Java, C, C++</li>
-        <li>Salesforce</li>
-        <li>Leadership</li>
-        <li>Time Management</li>
-        <li>Adaptability</li>
-        <li>Teamwork</li>
-        <li>Communication</li>
-    </ul>
-</section>
+        <div class="experience-item">
+          <h4>Heart Disease Classification using Machine Learning</h4>
+          <p>Developed a predictive model to classify heart disease risk using various machine learning algorithms on
+            patient data.</p>
+          <div class="skills">
+            <span>Machine Learning</span>
+          </div>
+        </div>
+        <div class="experience-item">
+          <h4>Certified in Artificial Intelligence (Pantech E Learning, March 2022 - June 2022)</h4>
+          <p>Completed a certification program focused on AI concepts, applications, and techniques for intelligent
+            systems.</p>
+          <div class="skills">
+            <span>Artifical Intelligence</span>
+          </div>
+        </div>
+        <div class="experience-item">
+          <h4>Certified in Data Science and Analytics using Python and R (Quantum Learning, Nov 2021 - Dec 2021)</h4>
+          <p> Acquired skills in data analysis, visualization, and statistical modeling using Python and R programming
+            languages.</p>
+          <div class="skills">
+            <span>Python</span> <span>R</span> <span>Quantum Learning</span>
+          </div>
+        </div>
+        <div class="experience-item">
+          <h4>Salesforce Optimization and Forecasting using Python</h4>
+          <p> Implemented data-driven strategies to enhance Salesforce operations and improve sales forecasting accuracy
+            using Python</p>
+          <div class="skills">
+            <span>Python</span> <span>Salesforce</span>
+          </div>
+        </div>
+      </section>
+      <section id="projects">
+        <h2 style="color: rgb(217, 209, 209);">Term Project [Master’s]</h2>
+        <div class="experience-item">
+          <h4>Password Generator</h4>
+          <p>Developing a user-friendly application to generate strong, random passwords, enhancing digital security for
+            users.</p>
+          <p>With enhanced security and user customization focusing on high-entropy passwords.</p>
+          <p>Plans for future integration with password managers for automatic storage and retrieval of generated
+            passwords.</p>
+        </div>
+      </section>
 
-<section>
-    <h2>Education</h2>
-    <ul>
-        <li><strong>Master’s in Applied Computer Science</strong> - Grand Valley State University, 2023 - 2025</li>
-        <li><strong>Bachelor’s in Information Science and Engineering</strong> - MVJ College of Engineering, Bangalore, India, 2019 - 2023</li>
-    </ul>
-</section>
+      <section id="interests">
+        <h2 style="color: rgb(217, 209, 209);">Interests</h2>
+        <div class="experience-item">
+          <div class="interest">
+            <span>Movie Buff</span> <span>Cooking</span> <span>Bit of shopping</span>
+          </div>
+        </div>
+      </section>
 
-<section>
-    <h2>Projects</h2>
-    <ul>
-        <li>Heart disease classification using machine learning</li>
-        <li>Certified in Artificial Intelligence (Pantech E learning, March 2022 - June 2022)</li>
-        <li>Certified in Data Science and Analytics using Python and R (Quantum Learning, Nov 2021 - Dec 2021)</li>
-        <li>Salesforce optimization and forecasting using Python</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:njoe.srini@gmail.com">njoe.srini@gmail.com</a></p>
-    <p>Location: Grand Rapids, MI</p>
-</section>
-
+      <section id="contact">
+        <h2 style="color: rgb(217, 209, 209);">Contact</h2>
+        <div class="experience-item">
+          <p>
+            Email: njoe.srini@gmail.com
+          </p>
+          <p>
+            Location: Grand Rapids, MI
+          </p>
+          <p><a href="">Team's GitHub</a></p>
+        </div>
+      </section>
+    </div>
+  </div>
 </body>
-</html>
 
+</html>
